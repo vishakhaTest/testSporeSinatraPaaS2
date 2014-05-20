@@ -1,0 +1,11 @@
+stack_name: testsporesinatrapaas2-preprod
+environment: preproduction
+paas_environment: production
+
+layers:
+  - dns:
+      - name: 'testsporesinatrapaas2.preprod.paas.aws.vodafone.com.au'
+    instances:
+      ami_name: <%=ami_name%>
+      env:
+        LOG_FILENAME: testsporesinatrapaas2-preprod
